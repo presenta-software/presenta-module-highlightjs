@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentaModuleHighlightJs</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/monokai.min.css">
+    <script src="../dist/presenta-module-highlightjs.min.js"></script>
+</head>
+<body>
+
+    <div id="scene">
+        <h1>Test</h1>
+        <pre><code class="javascript">var a = 1;</code></pre>
+        <p>some text</p>
+        <pre><code class="css">.div{ color:red; }</code></pre>
+    </div>
+
+    <script>
+        new PresentaModuleHighlightJs(document.querySelector('#scene'))
+    </script>
+</body>
+</html>
