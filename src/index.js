@@ -1,6 +1,21 @@
 import hljs from 'highlight.js'
 
+const injectTheme = name => {
+  const theme = document.createElement('link')
+  theme.href = `//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${name}.min.css`
+  theme.rel = 'stylesheet'
+  document.head.appendChild(theme)
+}
+
+let injected = false
+
 const module = function (sceneElement, modConfig, sceneConfig, projectConfig) {
+  const theme = modConfig.theme || 'default'
+  if (!injected) {
+    injectTheme(theme)
+    injected = true
+  }
+
   sceneElement.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block)
   })
