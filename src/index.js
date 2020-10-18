@@ -2,7 +2,7 @@ import hljs from 'highlight.js'
 
 const injectTheme = name => {
   const theme = document.createElement('link')
-  theme.href = `//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${name}.min.css`
+  theme.href = `http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${name}.min.css`
   theme.rel = 'stylesheet'
   document.head.appendChild(theme)
 }
