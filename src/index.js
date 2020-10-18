@@ -1,18 +1,18 @@
 import hljs from 'highlight.js'
 
-const injectTheme = name => {
-  const theme = document.createElement('link')
-  theme.href = `http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${name}.min.css`
-  theme.rel = 'stylesheet'
-  document.head.appendChild(theme)
+const injectStyle = style => {
+  const link = document.createElement('link')
+  link.href = `http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${style}.min.css`
+  link.rel = 'stylesheet'
+  document.head.appendChild(link)
 }
 
 let injected = false
 
 const module = function (sceneElement, modConfig, sceneConfig, projectConfig) {
-  const theme = modConfig.theme || 'default'
+  const style = typeof modConfig === 'string' ? modConfig : 'default'
   if (!injected) {
-    injectTheme(theme)
+    injectStyle(style)
     injected = true
   }
 

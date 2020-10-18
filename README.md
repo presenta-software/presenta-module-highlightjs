@@ -12,19 +12,11 @@ To configure this module use this setting:
 
 ```js
 modules:{
-  highlightjs:true
+  highlightjs: true
 }
 ```
 
-To choose a [Highlight.js style](https://highlightjs.org/static/demo/):
-
-```js
-modules:{
-  highlightjs:{
-  	theme: 'default'
-  }
-}
-```
+Use any valid [Highlight.js style](https://highlightjs.org/static/demo/) instead `true` to override the default style.
 
 ## Development
 
