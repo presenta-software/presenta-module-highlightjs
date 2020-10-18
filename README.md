@@ -11,13 +11,20 @@ Please read the installation istructions for official plugins [here](https://lib
 To configure this module use this setting:
 
 ```js
-{
-    modules:{
-      highlightjs:true
-    }
+modules:{
+  highlightjs:true
 }
 ```
 
+To choose a [Highlight.js style](https://highlightjs.org/static/demo/):
+
+```js
+modules:{
+  highlightjs:{
+  	theme: 'default'
+  }
+}
+```
 
 ## Development
 
