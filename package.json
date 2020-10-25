@@ -1,6 +1,6 @@
 {
   "name": "@presenta/module-highlightjs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "src/index.js",
   "unpkg": "dist/presenta-module-highlightjs.min.js",
