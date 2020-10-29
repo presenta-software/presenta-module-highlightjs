@@ -1,9 +1,9 @@
 import hljs from 'highlight.js'
 
 const injectStyle = style => {
-  const protocol = location.protocol.indexOf('file') ? 'http' : ''
+  const protocol = location.protocol.indexOf('file') >= 0 ? 'http:' : ''
   const link = document.createElement('link')
-  link.href = `${protocol}://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${style}.min.css`
+  link.href = `${protocol}//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/styles/${style}.min.css`
   link.rel = 'stylesheet'
   document.head.appendChild(link)
 }
