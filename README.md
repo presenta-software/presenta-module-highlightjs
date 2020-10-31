@@ -16,7 +16,25 @@ modules:{
 }
 ```
 
-Use any valid [Highlight.js style](https://highlightjs.org/static/demo/) instead `true` to override the default style.
+Use any valid [Highlight.js style](https://highlightjs.org/static/demo/) instead `true` to override the default style, such as:
+
+```js
+modules:{
+  highlightjs: 'gradient-light'
+}
+```
+
+The plugin inject the selected style. If you want to disable this behavior, configure this way:
+
+```js
+modules:{
+  highlightjs: 'gradient-light'
+}
+```
+
+
+
+
 
 ## Development
 
