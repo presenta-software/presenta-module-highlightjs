@@ -28,7 +28,10 @@ The plugin inject the selected style. If you want to disable this behavior, conf
 
 ```js
 modules:{
-  highlightjs: 'gradient-light'
+  highlightjs:{
+    noCss: true,
+    style: 'gradient-light'
+  }
 }
 ```
 
