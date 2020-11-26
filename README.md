@@ -2,52 +2,24 @@
 
 This module converts any `pre code` selector found in [PRESENTA Lib](https://github.com/presenta-software/presenta-lib) blocks using [highlightjs library](https://highlightjs.org/).
 
-## Installation
+## Documentation
 
-Please read the installation istructions for official plugins [here](https://lib.presenta.cc/extend/#install-an-official-plugin) using this unique identifier: `module-highlightjs`
+Full documentation can be found [here](https://lib.presenta.cc/plugins/modules/highlightjs).
 
-## Usage
+## Contribute
 
-To configure this module use this setting:
+### Development
 
-```js
-modules:{
-  highlightjs: true
-}
-```
+To start a development session:
 
-Use any valid [Highlight.js style](https://highlightjs.org/static/demo/) instead `true` to override the default style, such as:
+	npm start
 
-```js
-modules:{
-  highlightjs: 'gradient-light'
-}
-```
+To build a release:
 
-The plugin inject the selected style. If you want to disable this behavior, configure this way:
+	npm run build
 
-```js
-modules:{
-  highlightjs:{
-    noCss: true,
-    style: 'gradient-light'
-  }
-}
-```
+## Licence
 
+This plugin is released under the [3-Clause BSD license](LICENSE).
 
-
-
-
-## Development
-
-Run the watcher:
-
-    npm start
-
-and the local webserver
-
-    npm run test
-
-
-
+Copyright © 2020 Fabio Franchino, [https://fabiofranchino.com](https://fabiofranchino.com)
